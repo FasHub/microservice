@@ -1,0 +1,13 @@
+version: '1'
+services:
+  fasil:
+    build:
+      context: ./fasil
+      dockerfile: Dockerfile
+    container_name: fasil
+    ports:
+      - "3001:3001"
+    restart: always
+    volumes:
+      - .:/app
+      - /app/fasil/node_modules
