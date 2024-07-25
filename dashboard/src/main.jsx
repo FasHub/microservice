@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-import Layout from './Layouts/Layout'
+import {Layout} from './Layouts'
 import Dashboard from './pages/dashboard/Dashboard'
 import NotFound from './pages/404/NotFound'
 
