@@ -1,5 +1,12 @@
 version: '1'
 services:
+  nosql-db:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    container_name: nosql-db
+    volumes:
+      - ./db/:/data/db
   fasil:
     build:
       context: ./fasil
@@ -8,6 +15,8 @@ services:
     ports:
       - "3001:3001"
     restart: always
+    depends_on:
+      - "nosql-db"
     volumes:
       - .:/app
       - /app/fasil/node_modules

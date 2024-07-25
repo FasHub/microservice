@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Roboto", sans-serif;
+    max-width: 100dvw;
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+  }
+}
+
+@layer base {
+  :root {
+    --color-content0: 224 31% 46%;
+    --color-content1: 0 0% 100%;
+    --color-content2: 216 19% 35%;
+    --color-content3: 217 32.6% 17.5%;
+    --color-appColor1: 224 31% 46%;
+    --color-appColor2: 255 23% 49%;
+    --color-appColor3: 224 32% 91%;
+    --color-appColor4: 222 62% 96%;
+    --color-appColor5: 0 0% 100%;
+  }
+
+  :root[data-theme="dark"] {
+    --color-content0: 0 0 100%;
+    --color-content1: 0 0 100%;
+    --color-content2: 215 20% 65%;
+    --color-content3: 0 0 90%;
+    --color-appColor1: 223 32% 23%;
+    --color-appColor2: 223 33% 16%;
+    --color-appColor3: 221 37% 17%;
+    --color-appColor4: 222 33% 20%;
+    --color-appColor5: 222 75% 20%;
+  }
+
+  :root[data-theme="cool"] {    --color-content0: 223 32% 23%;
+    --color-content0: 196 64% 24%;
+    --color-content1: 0 0% 100%;
+    --color-content2: 215 19% 35%;
+    --color-content3: 217 32.6% 17.5%;
+    --color-appColor1: 196 64% 24%;
+    --color-appColor2: 199 22% 75%;
+    --color-appColor3: 214 32% 91%;
+    --color-appColor4: 210 40% 96%;
+    --color-appColor5: 0 0% 100%;
+  }
+}
